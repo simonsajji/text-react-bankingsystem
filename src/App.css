@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300&family=Caveat:wght@500&family=Comfortaa:wght@300&family=Cookie&family=Kite+One&family=Kumbh+Sans:wght@300&family=Lobster&family=Lobster+Two&family=Monoton&family=Montserrat:wght@200&family=Raleway:wght@300&family=Rancho&family=Satisfy&display=swap');
+
+*{
+  box-sizing:border-box;
+}
+.App {
+  text-align: center;
+  width:100%;
+  height:100vh;
+  background-color:rgba(9, 12, 14, 0.96);
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap:5rem;
+  color:aliceblue;
+
+}
+
+
+.App .Balance{
+  width:45rem;
+  height:15rem;
+  border:0.04rem solid rgba(44, 41, 41, 0.5);
+  background-color:rgba(20, 17, 17,0.4);
+  border-radius:0.6rem;
+  display: flex;
+  padding:1rem;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  text-align: left;
+}
+ .title{
+  color:darkturquoise;
+  font-size:1.3rem;
+
+}
+
+.Balance div, .Withdraw div, .Deposit div{
+  font-weight:lighter;
+  font-size:1rem;
+  flex:1;
+  display:flex;
+  flex-direction: row;
+  justify-content:space-between;
+  align-items: left;
+  
+
+ 
+}
+
+
+.Balance .min{
+
+  font-family: 'Cairo', sans-serif;
+  font-size:0.9rem;
+  color:darkorange;
+ 
+}
+
+.min span{
+  color:rgb(250, 107, 41);
+  margin-left:1rem;
+  flex:100%;
+  text-align: right;
+ 
+}
+
+.dep{
+  color:violet;
+}
+
+.with{
+  color:goldenrod;
+}
+
+.wrapper{
+  display: flex;
+  flex-direction: row;
+  gap:2rem;
+}
+
+.Balance button{
+
+  width:20%;
+  height:1.8rem;
+  background-color: rgba(126, 13, 36,0.5);
+  border:0;
+  border-radius:0.4rem;
+  color:rgb(255, 255, 255);
+  font-family: 'Kumbh Sans', sans-serif;
+  padding:0.2rem;
+  outline:none;
+  opacity:0.8;
+  opacity:0.7;
+  
+
+  
+
+}
+
+
+.Withdraw, .Deposit{
+  width:30rem;
+  height:20rem;
+  border:0.04rem solid rgba(44, 41, 41, 0.5);
+  background-color:rgba(20, 17, 17,0.4);
+  border-radius:0.6rem;
+  display: flex;
+  padding:1rem;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  text-align: left;
+
+}
+
+.Withdraw div, .Deposit div{
+  gap:2%;
+}
+
+.Withdraw div input[type="number"], .Deposit div input[type="number"]{
+  width:55%;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding:0.6rem;
+  font-size: 1rem;
+  border:0;
+  outline:0;
+  border-radius: 0.3rem;
+  height:35%;
+}
+
+.Withdraw div button, .Deposit div button{
+  width:45%;
+  background-color: rgba(48, 47, 47, 0.4);
+  color:white;
+ 
+  font-size: 0.7rem;
+  border:0;
+  text-align: center;
+  outline:0;
+  border-radius: 0.3rem;
+  height:40%;
+  opacity:0.7;
+
+
+}
+
+.amt{
+  color:coral;
+  display: flex;
+  
+}
+
+.amt span{
+  color:cornflowerblue;
+  margin-right:50%;
+  
+}
+
+
+
+
+
+
+
+
+
+button:hover{
+
+  opacity:1;
+  color:white;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
